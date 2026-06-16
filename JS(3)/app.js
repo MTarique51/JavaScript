@@ -39,4 +39,4 @@ console.log('1234' === 1234);    // false (this wiill check value and type)
 console.log("for non number");
 console.log('A'>'a');  //false
 console.log('a'>'A');  //true
-console.log('P'>'p');  //false
+console.log('B'>'b');  //false

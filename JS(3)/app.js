@@ -32,7 +32,7 @@ console.log(age<18);   // false
 console.log(age==18);  // true
 console.log(age!=18);  // false
 
-console.log("check for == and ===");
+console.log("check for == & ===");
 console.log('1234' == 1234);     // true (this will check only the value)
 console.log('1234' === 1234);    // false (this wiill check value and type)
 

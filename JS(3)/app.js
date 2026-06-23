@@ -18,7 +18,7 @@ console.log(++a);     //12  (pre increment)
 console.log("ASSIGNMENT OPERATOR");
 let c = 100;
 let d = 25;
-d= c;
+d = c;
 console.log(d)  // 100
 
 // COMPARISON OPERATOR

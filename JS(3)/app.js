@@ -146,4 +146,28 @@ else{
 }
 
  
-                         
+                      // SWITCH STATEMENT //
+                      
+                      
+let Color = "blue";
+switch (Color){
+        case "red":
+        console.log("Stop!");
+        break;
+
+        case "yellow":
+        console.log("slow down!");
+        break;
+
+        case "green":
+        console.log("Go!");
+        break;
+
+        default:
+        console.log("light is broken!");
+        break;
+} 
+
+alert("This is a Simple Alert test!");                    // this will show alway an alert if we refresh the page//
+let name = prompt("Enter your name here:");               // this will show a popup for enter somthing //
+console.log(name);

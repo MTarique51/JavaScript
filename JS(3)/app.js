@@ -105,3 +105,45 @@ else{
 else{
     console.log("Better Luck Next time!");
 }
+
+                                          // LOGICAL OPERATORS //
+// Logical AND(&&)
+let Marks = 90;
+if(Marks >= 33 && Marks >=80){
+    console.log("pass");
+    console.log("A+");
+}   
+
+// Logical OR(||)
+let MarksP = 90;
+if(MarksP >= 91 ||MarksP >=95){
+    console.log("pass");
+    console.log("A+");
+}
+else{
+    console.log("fail")
+}
+let Marks2 = 90;
+if(!(Marks2 < 33)){
+    console.log("pass");
+    console.log("A+");
+} 
+
+let Marks3 = 23;
+if((Marks3 > 33 && Marks3 <= 80) || !(false)){    // !(false) always show true
+    console.log("true")
+}
+
+                         // Practice Question //
+
+
+let str = "apple";
+if(str[0] === 'a' && str.length > 3){
+    console.log("Good String");
+}
+else{
+    console.log("Not a Good String");
+}
+
+ 
+                         

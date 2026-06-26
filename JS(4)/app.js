@@ -21,3 +21,23 @@ console.log(Str.indexOf("Z"));
 
                                               // Method Chaining //
 
+let Msg = "     i  am Mohammad Tarique from Mau Uttar Pradesh      ";
+let newMsg = Msg.toUpperCase().trim();
+console.log(newMsg);
+
+                                            // Slice Method {.slice(n,m)}//
+
+let str = "MohammadTarique";
+console.log(str.slice(2));
+console.log(str.slice(8));
+console.log(str.slice(2,8));
+console.log(str.slice(8,13));
+console.log(str.slice(-1));         // lenth - nth index
+
+                                            // Replace & Repeat Method //
+
+let s = " My name is Tarique";
+console.log(s.replace("Tarique" , "Zalique"));
+console.log(s);
+console.log(s.replace("name","correct name"));
+console.log(s.repeat(2));

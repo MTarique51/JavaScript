@@ -101,3 +101,47 @@ console.log("Hi there!");
 //     console.log("Zalique");
 // // }, 4000);
 // clearInterval(id1 , id2);
+console.log("-----------------------------------");
+
+                              // this with Arrow Functions //
+
+const student1 = {
+  name: "Ahmad",
+  marks: 95,
+  prop: this,   // global scope
+  getName: function() {
+    console.log(this);
+    return this.name;
+  },
+  getMarks: () => {
+    console.log(this);  // parent's Scope 
+    return this.marks;
+  },
+
+  getInfo1: function(){
+    setTimeout( () => {
+      console.log(this);  // student
+    }, 2000);
+  },
+  getInfo2: function() {
+    setTimeout( function(){
+      console.log(this);   // window  
+    }, 2000);
+  }
+};
+console.log("-----------------------------------");
+console.log("-----------------Write an Arrow function that returns the square of a number 'n'------------------");
+
+const square = (n) => n*n;
+console.log("Square of the Number is :",square(4));
+console.log("-----------------------------------");
+
+console.log("--------------Write a function that prints'Hallo World' 5 times at invterval of 2s each -------------");
+ 
+let id = setInterval( () => {
+  console.log("Hallo World");
+}, 2000);
+setTimeout( () => {
+  clearInterval(id);
+  console.log("Clear interval ran ")
+}, 10000);

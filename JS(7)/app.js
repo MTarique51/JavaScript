@@ -83,5 +83,75 @@ function printTable(n){
 printTable(5);
 console.log("-------------------------------");
 
-                                // Return Keyword //
+                     // Return Keyword(use to return some value from the function) //
+console.log("Returng the Value:")
+function sUm(a,b){
+    console.log("Hello1");
+    console.log("Hello2");
+    return a+b;
+    console.log("Hello3");
+    console.log("Hello4");
+}
+console.log(sUm(1,2));
 
+console.log("-------------------------------");
+                
+             // Creating a function that gives us multiplication table of the number //
+
+console.log("Sum of number from one to n:");
+
+function sum1toN(n) {
+    let sum = 0;
+    for(let i=1 ; i<=n ; i++){
+        sum += i;
+    }
+    return sum;
+}
+console.log(sum1toN(5));
+console.log(sum1toN(100000));
+console.log("-------------------------------");
+
+                // Creating a function that gives us the concatination of all strings in an Array //
+
+let str = ["hi" , "hello" , "bye" , "!"];
+
+function concat(str){
+    let result ="";
+    for(let i=0 ; i<str.length ; i++){
+        result += str[i];
+    }
+    return result;
+}
+console.log(concat(str));
+console.log("-------------------------------");
+
+                             // Scope(type= Function , Block , Lexical) //
+// Function Scope
+let sum1 = 50;    // global Scope
+function calSum(a,b){
+    let sum1 = a+b;   // Function Scope (Only in Function)
+    console.log(sum1);
+}
+    calSum(1,2);
+    console.log(sum1);  // Globally Accessible// 
+console.log("-------------------------------");
+
+
+// Block Scope
+for(let i=0 ; i<=3 ; i++){
+    console.log(i);         // Block Scope
+}
+console.log("-------------------------------");
+
+
+// Lexical Scope 
+function outerFunc(){
+    let x = 5;
+    let y = 6;
+    function innerFunc(){
+        console.log(x);
+         console.log(y);
+    }
+    innerFunc();
+}
+console.log(outerFunc());

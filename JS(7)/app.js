@@ -155,3 +155,95 @@ function outerFunc(){
     innerFunc();
 }
 console.log(outerFunc());
+console.log("-------------------------------");
+
+                                    // Function Expression //
+
+let Sum = function(a,b){
+    return a+b;
+}
+console.log(Sum(11,12));
+console.log("-------------------------------");
+
+                                    // Heigher order Function //
+function multipleGreet(func , count){    // Heigher order //
+    for(let i=1 ; i<=count ; i++){
+        func();
+    }
+}
+let greet = function(){
+    console.log("hello");
+}
+multipleGreet(greet ,10);
+multipleGreet(function() {console.log("Namaste")} ,10);
+console.log("-------------------------------");
+
+                                     // Function Expression  return//
+
+function oddOrEven(request){
+    if(request == "odd")
+    {      
+      let odd = function(n)
+       {
+        console.log(!(n%2 == 0));
+       }
+       return odd;
+    }
+    else if(request == "even")
+    {
+      let even = function(n)
+       {
+         console.log((n%2 == 0));
+       }
+       return even;
+    }
+    else
+    {
+        console.log("Wrong Request");
+    }
+}
+let request = "odd"; // even
+
+                                    // Mothods //
+console.log("Calculator by Methods (Value = 11 & 2) :")
+const calculator = {
+    add: function(a,b)
+    {
+        return a+b;
+    },
+
+     sub: function(a,b)
+    {
+        return a-b;
+    },
+
+     mul: function(a,b)
+    {
+        return a*b;
+    }
+}
+console.log("Addition:",calculator.add(11,2));
+console.log("Subtraction:",calculator.sub(11,2));
+console.log("Multiplication:",calculator.mul(11,2));
+
+// Shorthand of using mothods
+console.log("-------------Shorthand of using mothods-----------------");
+const Calculator = {
+    add (a,b)
+    {
+        return a+b;
+    },
+
+     sub (a,b)
+    {
+        return a-b;
+    },
+
+     mul (a,b)
+    {
+        return a*b;
+    }
+}
+console.log("Addition:",Calculator.add(11,2));
+console.log("Subtraction:",Calculator.sub(11,2));
+console.log("Multiplication:",Calculator.mul(11,2));

@@ -183,3 +183,15 @@ function sum(...args) {
     }
 };
 console.log(i);
+
+        console.log("---------------------Destructuring-----------------------");
+
+let names = ["Tarique" , "Sajid" , "Saqib" , "Ahmad" , "x" , "y" , "z"];
+
+// let winner = names[0];
+// let runnerup = names[1];
+// let secondRunnerup = names[2];
+
+let [winner ,  runnerup , secondRunnerup , ...others] = names;
+console.log(winner , runnerup , secondRunnerup);
+console.log("Store remainings :", ...others);

@@ -195,3 +195,16 @@ let names = ["Tarique" , "Sajid" , "Saqib" , "Ahmad" , "x" , "y" , "z"];
 let [winner ,  runnerup , secondRunnerup , ...others] = names;
 console.log(winner , runnerup , secondRunnerup);
 console.log("Store remainings :", ...others);
+
+         console.log("---------------------Destructuring(Object)-----------------------");
+
+const stdnts = {
+        name:"Qulsum",
+        age: 10,
+        class: 4,
+        subjects: ["Hindi" , "English" , "Urdu"],
+        username: "qulsum@123",
+        password: "abcd"
+};
+let {username , password:Secret} = stdnts;  // Destructuring(Object)
+console.log("User Name :",username , "& Password : ", Secret);

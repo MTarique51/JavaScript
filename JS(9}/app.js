@@ -154,3 +154,32 @@ console.log("Minimum :",Math.min(...SArray)); // use of Spread(...)
 SArray.push(-111);
 console.log("Minimum :",Math.min(...SArray)); // use of Spread(...)
 console.log("Maximum :",Math.max(...SArray)); // use of Spread(...)
+
+        console.log("---------------------Spread(Array Literals)-----------------------");
+
+let arrr = [1,8,5,5,6,4,9,5];
+let NewArr = [...arrr];
+console.log("Copy of original Array: " ,NewArr);
+
+let char = "Mohammad Tarique";
+let NewChar = [...char]; 
+console.log("Copy of original Array: " ,NewChar);
+
+          console.log("---------------------Spread(Array Literals)-----------------------");
+
+const data = {
+    email: "mohd@gmail.com",
+    pass: "abcd",
+};
+const CopyData =  {...data , id:1230};
+console.log("Copy of Original data :",CopyData );
+
+        console.log("---------------------Rest(Opposite to Spread)-----------------------");
+
+function sum(...args) {
+    // Arguments
+    for(i=0 ; i<args.length ; i++){
+        console.log("You gave Us ", args[i]);
+    }
+};
+console.log(i);

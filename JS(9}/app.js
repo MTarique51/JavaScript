@@ -145,3 +145,12 @@ function sum(a , b = 2){
 console.log(sum(1,5));
 console.log(sum(1));   // Automatic taken b=2 which set as default
 console.log(sum(5));
+
+        console.log("---------------------Spread-----------------------");
+
+let SArray = [1,5,8,6,4,6,2,1,3,0,5,6,0,58,0,8,8,9,1];
+console.log("Seprate Element of the Array :", ...SArray);
+console.log("Minimum :",Math.min(...SArray)); // use of Spread(...)
+SArray.push(-111);
+console.log("Minimum :",Math.min(...SArray)); // use of Spread(...)
+console.log("Maximum :",Math.max(...SArray)); // use of Spread(...)

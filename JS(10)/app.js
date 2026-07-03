@@ -1,8 +1,3 @@
-// let para1 = document.createElement("p");
-// para1.innerText = "Hey there, I'm the new text!";
-// document.querySelector("body").append("p");
-
-
 console.log("---------------etElementsByClassName--------------------");
 let smallImages = document.getElementsByClassName("oldImg");
 
@@ -99,3 +94,45 @@ console.log("Next sibling of h4:,",h4.nextElementSibling);
 // Check for previousElementsibling & nextElementsibling with changing style
 let Img = document.querySelector('img');
 // console.log("Changed color of Previous sibling of img:",Img.previousElementSibling.style.color="red");
+ 
+console.log("------- Adding Element on Page {(append=add element at end) & (append=add element at end) & insertAdjacent= Where do we want to add Element)}-------");
+// ADDING PARAGRAPH USING APPENDCHILD(Element)
+let newPara = document.createElement('p');
+newPara.innerText = "Hi! I am the new paragraph which is added later. (Added by appendChild) &";
+let body = document.querySelector('body');   // for adding any element appendChild need parent node //
+body.appendChild(newPara);      // this will show the added para in body tag
+
+let anotherPara = document.createElement('p');
+anotherPara.innerText = "Hi! I am the another new Paragraph which is added later.";
+let boX = document.querySelector('.box');   // for adding any element appendChild need parent node //
+boX.appendChild(anotherPara);      // this will show the added para in the box
+
+// ADDING BUTTON USING APPENDCHILD(Element)
+let btn = document.createElement('button');
+btn.innerText =("Click me!");
+boX.appendChild(btn);               // boX is already declared so direct...
+
+
+// ADDING ELEMENT USING APPEND(Element) ⭐🌟🌟⭐🌟🌟🌟⭐⭐🌟🌟⭐⭐🌟🌟
+newPara.append("THIS IS ADDED ONLY BY append");
+anotherPara.append(btn);
+
+// ADDING ELEMENT USING PREPEND(Element)
+let btnn = document.createElement('button');
+btnn.innerText =("CLICK ME!");
+boX.prepend(btnn);
+
+// ADDING ELEMENT USING INSERTADJACENTELEMENT(Element)
+let button = document.createElement('button');
+button.innerHTML = "NEW BIUTTON !";
+let A = document.querySelector('p');
+A.insertAdjacentElement('beforebegin' , button);
+// A.insertAdjacentElement('afterbegin' , button);
+// A.insertAdjacentElement('beforeend' , button);
+// A.insertAdjacentElement('afterend' , button);
+
+            console.log("------------------- Removing Elements(From Page) --------------------");
+
+// box.removeChild(btnn);      // for removing Element using parent node
+
+// btn.remove();                  // for removing Element directly ⭐🌟🌟⭐🌟🌟🌟⭐⭐🌟🌟⭐⭐🌟🌟

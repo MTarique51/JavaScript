@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+button{
+     margin-bottom: 15px;
+}
+
+div{
+    height: 100px;
+    width: 500px;
+    border: 1px solid black;
+    margin:  auto;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+button1{
+    border: 1px solid black;
+}

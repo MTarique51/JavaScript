@@ -59,3 +59,51 @@ function changedColor() {
 btnn.addEventListener("click", changedColor);
 h1.addEventListener("click", changedColor);
 h2.addEventListener("click", changedColor);
+
+console.log("-----------------------keyboard Events------------------------");
+
+// MOUSE EVENT
+let btnnn = document.querySelector("button2");
+btnnn.addEventListener("click" , function(event) {
+    console.log(event);
+    console.log("Button Clicked...");
+});
+// btnnn.addEventListener("click" , function(event) {
+//     console.log(event);
+//     console.log("Button Clicked...");
+// });
+
+// KEYBOARD EVENT
+let inp = document.querySelector("input");
+// inp.addEventListener("keydown" , function(event) {     // for Clicking Button
+//     console.log(event);
+//     console.log("Key was Pressed");
+// });
+// inp.addEventListener("keyup" , function(event) {       // for Releasing Button
+//     console.log(event);
+//     console.log("Key was Released");
+// });
+
+// inp.addEventListener("keydown" , function(event) {       
+//     console.log("Code= ",event.code);    // ArrowUp , ArrowDown , ArrowLeft , ArrowRight
+//     if(event.code == "ArrowUp"){
+//         console.log("Character moves Forward");
+//     }
+//     else if(event.code == "ArrowDown"){
+//         console.log("Character moves Backward");
+//     }
+//     else if(event.code == "ArrowLeft"){
+//         console.log("Character moves Left");
+//     }
+//     else if(event.code == "ArrowRight"){
+//         console.log("Character moves Right");
+//     }
+// });
+
+console.log("-----------------------Form Events------------------------");
+
+let form = document.querySelector("form");
+form.addEventListener("Submit", function(event) {
+    event.preventDefault();                             // for Disconnect the other page
+    alert("Form Submitted");
+});

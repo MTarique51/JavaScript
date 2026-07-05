@@ -102,8 +102,56 @@ let inp = document.querySelector("input");
 
 console.log("-----------------------Form Events------------------------");
 
-let form = document.querySelector("form");
-form.addEventListener("Submit", function(event) {
-    event.preventDefault();                             // for Disconnect the other page
-    alert("Form Submitted");
+// let form = document.querySelector("form");
+// form.addEventListener("Submit", function(event) {
+//     event.preventDefault();                             // for Disconnect the other page
+//     alert("Form Submitted");
+// });
+
+console.log("-----------------------Extracting Form Data-----------------------"); 
+
+let form = document.querySelector("Form");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    
+    // let inp = document.querySelector("input");
+    // console.dir(inp);
+    // console.log(inp.value);
+
+//     let user = document.querySelector("#user");           // OR  = this.elements[0] or form.elements[0]
+//     let pass = document.querySelector("#pass");           //  OR  = this.elements[1] or form.elements[1]
+//     console.log("Username :" ,user.value);
+//     console.log("Password :" ,pass.value);
+
+//     alert(`Hi ${user.value} , your password is set to ${pass.value}`);
 });
+
+console.log("-----------------------change event & input event-----------------------");
+
+let user = document.querySelector("#user");
+
+//CHANGE EVENT
+user.addEventListener("change", function () {
+    console.log("Input changed");
+    console.log("Final Value =", this.value);
+});
+
+// INPUT EVENT
+user.addEventListener("input", function () {
+    console.log("Input Event");
+    console.log("Final Value =", this.value);
+});
+
+
+//  QUESTION TEXT EDITOR
+
+let inpu = document.querySelector("#text");
+let p = document.querySelector("p");
+
+inpu.addEventListener("input" , function() {
+    console.log(inpu.value);
+    p.innerText = inpu.value;
+});
+
+

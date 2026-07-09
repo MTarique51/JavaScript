@@ -2,7 +2,7 @@ console.log("<---------------Call Stack------------------>")
 
 function hello() {
     
-console.log("inside hello() function");
+console.log("Inside hello() function");
     console.log("Hello");
 }
 
@@ -40,6 +40,7 @@ console.log("<--------------- BreakPoints------------------>")
 
 console.log("<--------------- JS is Single Threaded------------------>")
 
+// this is a small check
 // let a = 25;
 // console.log(a);
 // let b = 10;

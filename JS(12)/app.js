@@ -54,3 +54,54 @@ setTimeout(()=> {
     console.log("Hello World");
 }, 2000);
 console.log("hello...");
+
+console.log("<---------------Callback Hell------------------>");
+// Callbacks Nesting -----> Callback Hell
+
+h1 = document.querySelector("h1")
+
+    // setTimeout(()=> {
+    //     h1.style.color = "Orange";
+    // }, 1000);
+
+    // setTimeout(()=> {
+    //     h1.style.color = "blue";
+    // }, 2000);
+
+    // setTimeout(()=> {
+    //     h1.style.color = "pink";
+    // }, 3000);
+
+    // setTimeout(()=> {
+    //     h1.style.color = "black";
+    // }, 4000);
+
+           // OR
+
+    // function ChangeColor(color , delay){
+    //     setTimeout(()=> {
+    //         h1.style.color = color;
+    //     }, delay)
+    // }
+
+    // ChangeColor(("Orange") , 1000);
+    // ChangeColor(("blue") , 2000);
+    // ChangeColor(("pink") , 3000);
+    // ChangeColor(("Black") , 4000);
+
+                  // OR  
+
+    function ChangeColor(color , delay , nextColorChange){
+        setTimeout(()=> {
+            h1.style.color = color;
+            if(nextColorChange) nextColorChange();
+        }, delay)
+    }
+
+    ChangeColor("Orange" , 1000 , () => {
+        ChangeColor("blue", 1000 , () => {
+            ChangeColor("pink" , 1000 , () => {
+                ChangeColor("black" , 1000)
+            });
+        });
+    });

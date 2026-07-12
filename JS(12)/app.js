@@ -105,3 +105,42 @@ h1 = document.querySelector("h1")
             });
         });
     });
+
+    console.log("<---------------Callback Hell------------------>");
+
+function savetoDb(data , success , failure) {
+    let internetSpeed = Math.floor( Math.random() * 10 ) + 1;
+    if(internetSpeed > 4){
+        success();
+    }
+    else{
+        failure();
+    }
+}
+savetoDb(
+    "TaRiQuE" ,
+    () => {
+       console.log("Success1 : Your data was saved ");
+       savetoDb(
+         "hello world" , 
+           () => {
+             console.log("Success2 : Data2 saved");
+                savetoDb(
+                  "Zalique" , 
+                     () => {
+                       console.log("Success3 : Data3 saved");
+                          },
+                      () => {
+                        console.log("Failure3 : weak connection Data3 not saved");
+                    }
+                 );
+              },
+            () => {
+          console.log("Failure2 : weak connection Data2 not saved");
+        }
+     );
+  },
+     () => {
+    console.log("Failure1 : Weak connection! data not saved");
+    },
+);

@@ -102,3 +102,14 @@ for(let s=0 ; s<=heroes.length ; s++){
         console.log(`t=${t} , ${heroes[s][t]}`);
     }
 }
+
+                                        // for_of_Loop //
+
+// let frts = ["Mango" , "Banana" , "Orange" , "Litchi" , "Apple"];
+// for(frt of frts){
+//     console.log(frt);
+// }
+
+// for(letter of "Mohammad Tarique"){
+//     console.log(letter);
+// }

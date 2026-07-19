@@ -113,7 +113,7 @@ btn.innerText =("Click me!");
 boX.appendChild(btn);               // boX is already declared so direct...
 
 
-// ADDING ELEMENT USING APPEND(Element) ⭐🌟🌟⭐🌟🌟🌟⭐⭐🌟🌟⭐⭐🌟🌟
+// ADDING ELEMENT USING APPEND(Element)  ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 newPara.append("THIS IS ADDED ONLY BY append");
 anotherPara.append(btn);
 
@@ -135,4 +135,4 @@ A.insertAdjacentElement('beforebegin' , button);
 
 // box.removeChild(btnn);      // for removing Element using parent node
 
-// btn.remove();                  // for removing Element directly ⭐🌟🌟⭐🌟🌟🌟⭐⭐🌟🌟⭐⭐🌟🌟
+// btn.remove();                  // for removing Element directly ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐

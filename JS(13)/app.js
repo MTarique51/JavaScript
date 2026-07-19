@@ -70,11 +70,11 @@ async function Demo() {
         await changeColor("black" , 1000);
     }
     catch(err){
-        console.log("Error Caught!");
+        console.log("Error has been Caught!");
         console.log(err);
     }
 
     let a = 5;
     console.log(a);
-    console.log("New number :", a+3);
+    console.log("New number :", a+2);
 }

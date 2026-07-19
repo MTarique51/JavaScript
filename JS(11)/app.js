@@ -30,3 +30,5 @@ function sayHello(){
 function sayName() {
     alert("Mohammad Tarique");
 };
+
+

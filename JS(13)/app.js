@@ -1,4 +1,4 @@
-console.log("<----------------Async Keyword----------------->");
+console.log("<---------------Async Keyword---------------->");
 
 // Async function return promise by default //
 async function greet() {

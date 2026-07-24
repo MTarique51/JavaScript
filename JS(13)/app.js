@@ -81,23 +81,41 @@ async function Demo() {
 
 
 
-console.log("<-----------  First API request(Then & catch) ----------->");
+console.log("<-----------  First API request ----------->");
+
+//(USing then &catch)
 
 let url = "https://catfact.ninja/fact";
-fetch(url)
-   .then((res) => {
-    return res.json(); 
-   }) 
-   .then((data) => {
-    console.log("Data1 = ",data.fact);
-    return fetch(url);
-   })
-   .then((res) => {
-    return res.json(); 
-   }) 
-   .then((data2) => {
-    console.log("Data2 = ",data2.fact);
-   })
-   .catch((err) => {
-    console.log("ERROR - ", err);
-   });
+// fetch(url)
+//    .then((res) => {
+//     return res.json(); 
+//    }) 
+//    .then((data) => {
+//     console.log("Data1 = ",data.fact);
+//     return fetch(url);
+//    })
+//    .then((res) => {
+//     return res.json(); 
+//    }) 
+//    .then((data2) => {
+//     console.log("Data2 = ",data2.fact);
+//    })
+//    .catch((err) => {
+//     console.log("ERROR - ", err);
+//    });
+
+
+
+//(Using fetch with Async & Await)
+
+async function getFacts() {
+   try {
+    let res = await fetch(url);
+    let data = await res.json();
+    console.log(data.fact);
+   }
+   catch (e) {
+    console.log("error - ",e);
+   }
+   console.log("Bye");
+}

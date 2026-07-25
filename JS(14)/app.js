@@ -1,20 +1,41 @@
 let btn = document.querySelector("button");
+let url2 = "https://dog.ceo/api/breeds/image/random";
+
 btn.addEventListener("click", async() => {
-   let fact = await getFact();
-   console.log(fact);
-   let p = document.querySelector("#result");
-   p.innerText = fact;
+    let link = await getImage();
+
+    let img = document.querySelector("#result");
+    img.setAttribute("src" , link);
+    console.log(link);
 });
 
-let url = "https://catfact.ninja/fact";
-
-async function getFact() {
+async function getImage() {
     try {
-        let res = await axios.get(url);
-        return res.data.fact;
+        let res = await axios.get(url2);
+        return res.data.message;
     }
     catch (e) {
         console.log("error - ", e);
-        return "No fact found";
+        return "No Image found";
     }
 }
+
+// btn.addEventListener("click", async() => {
+//    let fact = await getFact();
+//    console.log(fact);
+//    let p = document.querySelector("#result");
+//    p.innerText = fact;
+// });
+
+// let url = "https://catfact.ninja/fact";
+
+// async function getFact() {
+//     try {
+//         let res = await axios.get(url);
+//         return res.data.fact;
+//     }
+//     catch (e) {
+//         console.log("error - ", e);
+//         return "No fact found";
+//     }
+// }

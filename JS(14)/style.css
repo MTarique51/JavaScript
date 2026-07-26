@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    background-color:rosybrown;
+    
+}
+input,button{
+    background-color:blanchedalmond;
+    border-color: aqua;
+    border-radius: 20px;
+    box-shadow: 2px;
+}

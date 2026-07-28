@@ -1,7 +1,7 @@
                         // This Keyword //
 console.log("-----------------------------------");
 const student = {
-    name: "Tarique",
+    name: "TARIQUE",
     age: 23,
     eng: 95,
     math: 94,
@@ -101,7 +101,7 @@ console.log("Hi there!");
 //     console.log("Zalique");
 // // }, 4000);
 // clearInterval(id1 , id2);
-console.log("-----------------------------------");
+console.log("---------------------------------------------------");
 
                               // this with Arrow Functions //
 
@@ -136,7 +136,7 @@ const square = (n) => n*n;
 console.log("Square of the Number is :",square(4));
 console.log("-----------------------------------");
 
-console.log("--------------Write a function that prints'Hallo World' 5 times at invterval of 2s each -------------");
+console.log("-------------Write a function that prints'Hallo World' 5 times at invterval of 2s each ------------");
  
 let id = setInterval( () => {
   console.log("Hallo World");

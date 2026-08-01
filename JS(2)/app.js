@@ -1,4 +1,4 @@
-let penPrice = 10;
+let penPrice = 20;
 let pencilPrice = 7;
 
 // USING CONCATINATION PROPERTY

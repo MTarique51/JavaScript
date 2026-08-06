@@ -1,5 +1,5 @@
 let penPrice = 20;
-let pencilPrice = 17;
+let pencilPrice = 11;
 
 // USING CONCATINATION PROPERTY
 let output = "The total price : " +(penPrice  +  pencilPrice)+ " Rupees.";

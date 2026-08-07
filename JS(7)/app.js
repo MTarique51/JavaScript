@@ -15,7 +15,7 @@ function print1to5() {
 }
 
 function isAdult() {
-    let age = 23;
+    let age = 24;
     if(age >= 18){
         console.log("Can Vote!");
     }

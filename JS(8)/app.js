@@ -27,7 +27,7 @@ console.log("Hello1");
   }
   catch
   {
-    console.log("Caught an Error! .... a is not defined");
+    console.log("Caught an Error! ..... a is not defined");
   }
 console.log("Hello2");
 console.log("Hello2");
